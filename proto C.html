@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="nEnjRDkcD6IQXhiyaEfx3qF0EIgGfCHYpA_ok2vDCyM"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protoc</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      hr {
+        margin: 20px 0;
+        border-top-width: 2px;
+      }
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+      }
+      #sidebar {
+        width: 250px;
+        position: sticky;
+        top: 20px;
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+      }
+      #sidebar h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      #sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      #sidebar li {
+        margin: 10px 0;
+      }
+      #sidebar a {
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+        font-weight: bold;
+        color: #333;
+      }
+      #sidebar a:hover {
+        background: #e9ecef;
+      }
+      #sidebar .submenu {
+        display: none;
+        padding-left: 20px;
+      }
+      #sidebar .submenu a {
+        font-weight: normal;
+      }
+      main {
+        flex: 1;
+      }
+      section {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        background: #fff;
+      }
+      <!-- 모든 섹션을 숨기고 클릭시 섹션을 표시 -- > main > section {
+        display: none;
+      }
+      #university-prep > section {
+        display: none;
+        border: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+      h3,
+      h4,
+      h5 {
+        margin-top: 0;
+      }
+      ol {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      #sidebar a.active {
+        background: #007bff;
+        color: white;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        #sidebar {
+          position: static;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>protoc</h1>
+    <hr />
+
+    <div class="container">
+      <nav id="sidebar">
+        <h2>목차</h2>
+        <ul>
+          <li>
+            <a href="#Introduction" class="parent-link">Introductions</a>
+            <ul class="submenu">
+              <li>
+                <a href="#It's Me!">It's Me!</a>
+              </li>
+              <li>
+                <a href="#about-proto C">About protoc</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#projects">2024 robot competition</a>
+          </li>
+          <li>
+            <a href="#university-prep" class="parent-link">2026 대입 준비</a>
+            <ul class="submenu">
+              <li>
+                <a href="#school-profiles">학교프로필</a>
+              </li>
+              <li>
+                <a href="#related-papers">관련 논문 및 자료</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#goals">Goals</a>
+          </li>
+          <li>
+            <a href="#skills">스킬</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <main>
+        <section id="It's Me!">
+          <h3 style="color: purple">Introduction</h3>
+          <p>
+            I am an ordinary high school senior interested in robotics and AI.
+          </p>
+          <p>I am currently preparing to enter university.</p>
+          <p>
+            I plan to document all my future plans, including programming and
+            ideas, under the project name Neovation.
+          </p>
+          <p>
+            I am confident that I will become an engineer who will change the
+            world, <br />and I hope that my future self will find strength in
+            this site.
+          </p>
+        </section>
+
+        <section id="about-proto C">
+          <h3 style="color: purple">About protoc</h3>
+          <p text: ceter>
+            &ensp;<b>proto</b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;+&ensp;&ensp;&ensp;&ensp;<b>C</b>hoiyunseo
+            <br>
+            (means 'first')&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(my name)
+          </p>
+        </section>
+
+        <section id="projects">
+            <section>
+                <h3 style="color: teal">2024 로봇 대회</h3>
+          <p>
+            I got the opportunity to compete in a robotics competition
+            <br />through a school club called "Makers Lab."
+          </p>
+          <ul>
+            <li>game type 1: sprint</li>
+            <li>game type 2: marathon</li>
+          </ul>
+            </section>
+          <section>
+            <ol>
+                <li>prepare</li>
+            </ol>
+
+          </section>
+        </section>
+
+        <section id="university-prep">
+          <section id="school-profiles">
+            <section id="dongguk">
+              <h5 style="color: orange">동국대학교 (12.6~12.7)</h5>
+              <ol>
+                <li>
+                  <a href="https://mecha.dongguk.edu/main"
+                    ><b>학과 홈페이지</b></a
+                  >
+                </li>
+                <li>
+                  <b>연구실</b>
+                  <ul>
+                    <li>
+                      <a href="http://irobot.dgu.edu/wordpress/"
+                        >인터랙티브 로봇 연구실 (임수철 교수님)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://sites.google.com/dgu.ac.kr/jolab"
+                        >JOLAB (조수호 교수님)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="https://mecha.dongguk.edu/professor/list?professor_haggwa_type=PROFH_037&professor_type=PROF_006"
+                    ><b>교수진</b></a
+                  >
+                </li>
+                <li>
+                  <a href="https://mecha.dongguk.edu/page/575"
+                    ><b>교육과정</b></a
+                  >
+                </li>
+              </ol>
+            </section>
+
+            <section id="kookmin">
+              <h5 style="color: green">국민대학교 (11.22)</h5>
+              <ol>
+                <li>
+                  <a href="https://me.kookmin.ac.kr/mech/index.do"
+                    ><b>학과 홈페이지</b></a
+                  >
+                </li>
+                <li>
+                  <b>연구실</b>
+                  <ul>
+                    <li>
+                      <a href="https://mairlab-km.github.io/"
+                        >멀티 모달 청각 및 지능형 로보틱스 연구실 (안인규
+                        교수님)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://me.kookmin.ac.kr/mech/info/professor.do"
+                    ><b>교수진</b></a
+                  >
+                </li>
+                <li>
+                  <a href="https://kudos.kookmin.ac.kr/"><b>로봇동아리</b></a>
+                </li>
+                <li>
+                  <a
+                    href="https://cms.kookmin.ac.kr/mech/edu-history/edu_process.do"
+                    ><b>교육과정</b></a
+                  >
+                </li>
+              </ol>
+            </section>
+
+            <section id="ajou">
+              <h5 style="color: blue">아주대학교 (11.16)</h5>
+              <ol>
+                <li>
+                  <a href="https://me.ajou.ac.kr/me/index.do"
+                    ><b>학과 홈페이지</b></a
+                  >
+                </li>
+                <li>
+                  <b>연구실</b>
+                  <ul>
+                    <li>
+                      <a href="https://iir.ajou.ac.kr/"
+                        >지능형 로봇 연구실 (김의겸 교수님)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://arrl.ajou.ac.kr"
+                        >자율 로봇 실험실 (이현범 교수님)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://www.ajou.ac.kr/me/people/faculty.do"
+                    ><b>교수진</b></a
+                  >
+                </li>
+                <li>
+                  <a href="https://me.ajou.ac.kr/me/under/curriculum.do"
+                    ><b>교육과정</b></a
+                  >
+                </li>
+              </ol>
+            </section>
+
+            <section id="gist">
+              <h5 style="color: red">GIST (10.30)</h5>
+              <ol>
+                <li>
+                  <a href="https://me.gist.ac.kr/me/"><b>학과 홈페이지</b></a>
+                </li>
+                <li>
+                  <b>연구실</b>
+                  <ul>
+                    <li>
+                      <a href="https://mpil-gist.github.io/"
+                        >기계 인지 및 지능 연구실 (김표진 교수님)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://dcas.gist.ac.kr/dcas/"
+                        >분산제어 및 자동화시스템 연구실 (안효성 교수님)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="https://me.gist.ac.kr/prog/gsMember/me/P/FACULTY/sub05_01_01/list.do"
+                    ><b>교수진</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://me.gist.ac.kr/me/sub03_01_04_02.do;jsessionid=B9EFEF62C78DDA2453FAC5567584408C"
+                    ><b>교육과정</b></a
+                  >
+                </li>
+              </ol>
+            </section>
+          </section>
+
+          <section id="related-papers">
+            <section>
+              <h3>거미줄 섬유 관련 </h3>
+              <ul>
+                <a
+                  href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE02178527&language=ko_KR&hasTopBanner=true&nowDate=20251014_2&minify=.min&cdnUrl=https%3A%2F%2Fcdn.dbpia.co.kr%2Fstatic"
+                  >거미줄 모사한 유동에 조립된 섬유의 구조와 기계적
+                  성질(유승화)</a
+                >
+              </ul>
+            </section>
+            <section>
+              <h3>루미놀 관련 </h3>
+              <ul>
+                <a 
+                href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE07371037&width=903">
+                범죄현장 조사용 <b>루미놀 시약의 제조법</b>에 관한 연구(임승)</a>
+              </ul>
+
+            </section>
+            <section>
+              <h3>헤모글로빈 관련 </h3>
+            </section>
+            <section>
+              <h3>활성산소 관련 </h3>
+              <ul><a href="https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=CFKO199811921842347&oCn=NPAP07935370&dbt=CFKO&journal=NPRO00286397">노화과정에 있어서 활성 산소의 역할</a></ul>
+              
+            </section>
+            <section>
+              <h3>초전도 현상 관련 </h3>
+            </section>
+          </section>
+          </section>
+          </section>
+          </section>
+        </section>
+
+        <section id="skills">
+          <h3 style="color: navy">스킬</h3>
+          <p>현재 보유하거나 학습 중인 스킬 목록입니다.</p>
+          <ul>
+            <li>프로그래밍 언어: Python, C++</li>
+            <li>프레임워크: ROS (Robot Operating System)</li>
+            <li>기타: 기본 머신러닝, Arduino</li>
+          </ul>
+        </section>
+
+        <section id="goals">
+          <h3 style="color: brown">Goals</h3>
+          <p>Record my Goals</p>
+          <ul>
+            <li><b>1. 인간과 상호작용하는 휴머노이드 로봇 개발</b></li>
+            <ul>
+                1st. 2030년 기계공학 학사 졸업(해커톤, 로봇 대회<br>
+                2nd. 한양대 로보틱스 대학원<br>
+                3th. 
+
+            </ul>
+            <br>
+            
+        </section>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sidebarLinks = document.querySelectorAll('#sidebar a');
+
+        sidebarLinks.forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSectionId = link.getAttribute('href').substring(1);
+
+            if (link.classList.contains('parent-link')) {
+              // Toggle submenu for parent
+              const submenu = link.nextElementSibling;
+              if (submenu && submenu.classList.contains('submenu')) {
+                submenu.style.display =
+                  submenu.style.display === 'block' ? 'none' : 'block';
+              }
+
+              // Show parent section and hide its subsections
+              const parentSection = document.getElementById(targetSectionId);
+              if (parentSection) {
+                // Hide all top-level sections
+                document
+                  .querySelectorAll('main > section')
+                  .forEach((section) => {
+                    section.style.display = 'none';
+                  });
+                parentSection.style.display = 'block';
+
+                // Hide all subsections
+                document
+                  .querySelectorAll(`#${targetSectionId} > section`)
+                  .forEach((subSection) => {
+                    subSection.style.display = 'none';
+                  });
+
+                // Show the default subsection (school-profiles)
+                const defaultSubSection =
+                  document.getElementById('school-profiles');
+                if (defaultSubSection) {
+                  defaultSubSection.style.display = 'block';
+                }
+
+                parentSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            } else {
+              // Handle sub-links or top-level links
+              const parentSection = document.getElementById(
+                link
+                  .closest('.submenu')
+                  ?.parentElement.querySelector('a')
+                  .getAttribute('href')
+                  .substring(1)
+              );
+              if (parentSection && link.closest('.submenu')) {
+                // Hide all top-level sections
+                document
+                  .querySelectorAll('main > section')
+                  .forEach((section) => {
+                    section.style.display = 'none';
+                  });
+                parentSection.style.display = 'block';
+
+                // Hide all subsections in the parent
+                document
+                  .querySelectorAll(`#${parentSection.id} > section`)
+                  .forEach((subSection) => {
+                    subSection.style.display = 'none';
+                  });
+
+                // Show the target subsection
+                const targetSubSection =
+                  document.getElementById(targetSectionId);
+                if (targetSubSection) {
+                  targetSubSection.style.display = 'block';
+                  targetSubSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              } else {
+                // For top-level sections
+                document
+                  .querySelectorAll('main > section')
+                  .forEach((section) => {
+                    section.style.display = 'none';
+                  });
+
+                const targetSection = document.getElementById(targetSectionId);
+                if (targetSection) {
+                  targetSection.style.display = 'block';
+                  targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }
+            }
+
+            // Update active state in sidebar
+            sidebarLinks.forEach((l) => l.classList.remove('active'));
+            link.classList.add('active');
+
+            // Update URL hash
+            window.history.pushState(null, null, `#${targetSectionId}`);
+          });
+        });
+
+        // Handle initial section display based on URL hash
+        const initialHash = window.location.hash || '#Introduction';
+        const initialSectionId = initialHash.substring(1);
+        const initialSection = document.getElementById(initialSectionId);
+
+        // Hide all top-level sections initially
+        document.querySelectorAll('main > section').forEach((section) => {
+          section.style.display = 'none';
+        });
+
+        // Handle subsections for university-prep
+        if (['school-profiles', 'related-papers'].includes(initialSectionId)) {
+          const parentSection = document.getElementById('university-prep');
+          parentSection.style.display = 'block';
+          initialSection.style.display = 'block';
+          // Open the submenu
+          const submenu = document.querySelector(
+            '#sidebar a[href="#university-prep"] + .submenu'
+          );
+          if (submenu) submenu.style.display = 'block';
+        } else if (initialSection) {
+          initialSection.style.display = 'block';
+        } else {
+          // Default to Introduction
+          document.getElementById('Introduction').style.display = 'block';
+        }
+
+        // Set active class on corresponding sidebar link
+        sidebarLinks.forEach((link) => {
+          if (link.getAttribute('href') === initialHash) {
+            link.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
